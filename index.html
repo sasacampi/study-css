@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página inicial do Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novo</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        
+
+    </header>
+
+    <div class="content">
+        <div class="txtbox">
+            <h2> Não é só Café<br>É <span>Starbucks!</span></h2>
+            <p> Bem-vindo à Starbucks, a cafeteria que é mais do que apenas café! 
+                Aqui, oferecemos uma ampla variedade de bebidas quentes e geladas, 
+                chás e comidas para satisfazer todos os gostos.
+                Nossa marca é conhecida por fornecer uma experiência única e autêntica, 
+                onde cada xícara é cuidadosamente preparada por nossos baristas experientes. 
+                Oferecemos uma variedade de grãos de café de alta qualidade, torrados na 
+                perfeição para trazer à tona os melhores sabores e aromas.</p>
+                <a href="#">Saiba mais</a>
+            </div>
+                <div class="imgBox"> 
+                    <img src="./img/frap1.png" class="starbucks"></div>
+    </div>
+    <ul class="thumb"> 
+        <li><img src="./img/thumb1.png" onclick="imgSlider('./img/frap1.png'); changeCircleColor('#017143')"></li>
+        <li><img src="./img/thumb2.png" onclick="imgSlider('./img/pink1.png'); changeCircleColor('#eb7495')"></li>
+        <li><img src="./img/thumb3.png" onclick="imgSlider('./img/ventifrap.png'); changeCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="./img/facebook.png"></a></li>
+        <li><a href="#"><img src="./img/twitter.png"></a></li>
+        <li><a href="#"><img src="./img/instagram.png"></a></li>
+        
+    </ul>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+            
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+    </script>
+</section>
+</body>
+</html>
